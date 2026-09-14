@@ -6,7 +6,7 @@ André Rolim is my Data Structure professor in Federal Institute on my associate
 # Organization
 This repository are divided by numerated classes, where each one have your solved questions. C programming language is the better option to understand deeply the fundamentals data structures, like vectors, matrixes, stacks, queues and graphs. Like an mental athlete, DSA is very, VERY, important to programming competitions.
 
-`Coming soon :)`
+`📂 class-2 -> Create a simple matrix system`
 
 God will help us.
 
