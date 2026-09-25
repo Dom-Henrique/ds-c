@@ -1,12 +1,13 @@
 # ⌨️ | Data Structure Classes Repository
 Hello comunity! How are you?
 
-André Rolim is my Data Structure professor in Federal Institute on my associate's degree in Software Development. Me, Renê e Luan are documenting our learning journey in Data Structure with C programming language.
+André Rolim is my Data Structure professor in Federal Institute on my associate's degree in Software Development. Me, Renê (@rene982) and Luan Ribeiro (ribeirop01) are documenting our learning journey in Data Structure with C programming language.
 
 # Organization
 This repository are divided by numerated classes, where each one have your solved questions. C programming language is the better option to understand deeply the fundamentals data structures, like vectors, matrixes, stacks, queues and graphs. Like an mental athlete, DSA is very, VERY, important to programming competitions.
 
 `📂 class-2 -> Create a simple matrix system`
+`📂 class-3 -> Create a simple system of emply managment`
 
 God will help us.
 
