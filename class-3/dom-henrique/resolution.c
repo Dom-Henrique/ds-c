@@ -11,6 +11,7 @@ struct enterpriseEmplies
     char maritalStatus[10];
     char occupation[30];
     char admissionDate[11];
+    float salary;
     int cpf;
 };
 // i need to storage 15 emplies inside a vector.
@@ -52,11 +53,13 @@ void addEmply(struct enterpriseEmplies list[], int *cont)
     readData(data.admissionDate, sizeof(data.admissionDate));
     printf("CPF: ");
     scanf("%d", &data.cpf);
+    printf("Salary: ");
+    scanf("%f", &data.salary);
 
     // aqui ela vai armazenar tudo
     list[*cont] = data;
     (*cont)++; // serve pra nao vazar o tamanho definido
-    
+
     printf("Sucessful emply addition!\n");
 }
 void removeEmply(struct enterpriseEmplies list[], int *cont, int cpf)
@@ -73,6 +76,8 @@ void removeEmply(struct enterpriseEmplies list[], int *cont, int cpf)
     {
         printf("Usuario nao existe!\n");
     }
+    list[index] = list[index + 1];
+    (*cont)--;
 }
 void printEmployees(struct enterpriseEmplies list[], int *cont)
 {
@@ -87,13 +92,20 @@ void printEmployees(struct enterpriseEmplies list[], int *cont)
         printf("Occupation: %s\n", list[i].occupation);
         printf("Admission Date: %s\n", list[i].admissionDate);
         printf("CPF: %d\n", list[i].cpf);
+        printf("Salary: %.2f\n", list[i].salary);
     }
 }
-
+struct enterpriseEmplies *createVector()
+{
+    struct enterpriseEmplies *data = malloc(MAX_EMPLOYEES * sizeof(struct enterpriseEmplies));
+    if (data == NULL)
+        return NULL;
+    return data;
+}
 int main()
 {
     int option = 1, cont = 0;
-    struct enterpriseEmplies data[MAX_EMPLOYEES];
+    struct enterpriseEmplies data = *createVector();
     while (option)
     {
         printf("========== MENU ==========\n1 - Add emply\n2 - Remove emply\n3 - Print Emply\nAny key - Exit\n");
@@ -101,14 +113,14 @@ int main()
         getchar();
         if (option == 1)
         {
-            addEmply(data, &cont);
+            addEmply(&data, &cont);
         }
         else if (option == 2)
         {
             int cpf;
             printf("CPF of emply: ");
             scanf("%d", &cpf);
-            removeEmply(data, &cont, cpf);
+            removeEmply(&data, &cont, cpf);
         }
         else if (option == 3)
         {
