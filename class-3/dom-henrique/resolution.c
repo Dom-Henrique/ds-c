@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 const int MAX_EMPLOYEES = 15;
 
@@ -42,6 +43,7 @@ void addEmply(struct enterpriseEmplies list[], int *cont)
     printf("Address: ");
     readData(data.address, sizeof(data.address));
     printf("Birth Date: ");
+    getchar();
     readData(data.birthDate, sizeof(data.birthDate));
     printf("Education: ");
     readData(data.education, sizeof(data.education));
@@ -51,6 +53,7 @@ void addEmply(struct enterpriseEmplies list[], int *cont)
     readData(data.occupation, sizeof(data.occupation));
     printf("Admission Date: ");
     readData(data.admissionDate, sizeof(data.admissionDate));
+    getchar();
     printf("CPF: ");
     scanf("%d", &data.cpf);
     printf("Salary: ");
@@ -60,7 +63,7 @@ void addEmply(struct enterpriseEmplies list[], int *cont)
     list[*cont] = data;
     (*cont)++; // serve pra nao vazar o tamanho definido
 
-    printf("Sucessful emply addition!\n");
+    printf("Sucessful emply addition!\n\n");
 }
 void removeEmply(struct enterpriseEmplies list[], int *cont, int cpf)
 {
@@ -74,25 +77,27 @@ void removeEmply(struct enterpriseEmplies list[], int *cont, int cpf)
     }
     if (index == -1)
     {
-        printf("Usuario nao existe!\n");
+        printf("User does'nt exists!\n");
     }
     list[index] = list[index + 1];
     (*cont)--;
 }
 void printEmployees(struct enterpriseEmplies list[], int *cont)
 {
-    for (int i = 0; i < cont; i++)
+    for (int i = 0; i < *cont; i++)
     {
-        printf("\n--- Emply %dth ---\n", i + 1);
-        printf("Name: %s\n", list[i].name);
-        printf("Address: %s\n", list[i].address);
-        printf("Birth Date: %s\n", list[i].birthDate);
-        printf("Education: %s\n", list[i].education);
-        printf("Marital Status: %s\n", list[i].maritalStatus);
-        printf("Occupation: %s\n", list[i].occupation);
-        printf("Admission Date: %s\n", list[i].admissionDate);
-        printf("CPF: %d\n", list[i].cpf);
-        printf("Salary: %.2f\n", list[i].salary);
+        printf("\n---------- Emply %dth ----------\n", i + 1);
+        printf("| Name: %s\n", list[i].name);
+        printf("| Address: %s\n", list[i].address);
+        printf("| Birth Date: %s\n", list[i].birthDate);
+        printf("| Education: %s\n", list[i].education);
+        printf("| Marital Status: %s\n", list[i].maritalStatus);
+        printf("| Occupation: %s\n", list[i].occupation);
+        printf("| Admission Date: %s\n", list[i].admissionDate);
+        printf("| CPF: %d\n", list[i].cpf);
+        printf("| Salary: %.2f\n", list[i].salary);
+        printf("--------------------------------\n");
+        printf("\n");
     }
 }
 struct enterpriseEmplies *createVector()
@@ -108,7 +113,7 @@ int main()
     struct enterpriseEmplies data = *createVector();
     while (option)
     {
-        printf("========== MENU ==========\n1 - Add emply\n2 - Remove emply\n3 - Print Emply\nAny key - Exit\n");
+        printf("\n========== MENU ==========\n1 - Add emply\n2 - Remove emply\n3 - Print Emply\n\nAny key - Exit\n\n");
         scanf("%d", &option);
         getchar();
         if (option == 1)
@@ -124,7 +129,7 @@ int main()
         }
         else if (option == 3)
         {
-            printEmployees;
+            printEmployees(&data, &cont);
         }
         else
         {
