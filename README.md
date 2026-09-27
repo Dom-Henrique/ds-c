@@ -10,6 +10,8 @@ This repository are divided by numerated classes, where each one have your solve
 
 `📂 class-3 -> Create a simple system of emply managment`
 
+`📂 class-4 -> Create a simple system of students managment`
+
 God will help us.
 
 # How to use this repository
