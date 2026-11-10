@@ -1,26 +1,56 @@
-# ⌨️ | Data Structure Classes Repository
-Hello comunity! How are you?
+# ⌨️ | DSA CLASSES
 
-André Rolim is my Data Structure professor in Federal Institute on my associate's degree in Software Development. [Me](https://github.com/Dom-Henrique), [Renê](https://github.com/rene982) and [Luan Ribeiro](https://github.com/ribeirop01) are documenting our learning journey in Data Structure with C programming language.
+Hello, community! How are you doing?
 
-# Organization
-This repository are divided by numerated classes, where each one have your solved questions. C programming language is the better option to understand deeply the fundamentals data structures, like vectors, matrixes, stacks, queues and graphs. Like an mental athlete, DSA is very, VERY, important to programming competitions.
+I'm currently studying Software Development at a Federal Institute, where André Rolim is my Data Structures professor. Together, [Renê](https://github.com/rene982) and I ([Dom Henrique](https://github.com/Dom-Henrique)) are documenting our learning journey through Data Structures using the C programming language.
 
-`📂 class-2 -> Create a simple matrix system`
+This repository is a collection of our class exercises, solutions, experiments, and progress as we develop our programming skills.
 
-`📂 class-3 -> Create a simple system of emply managment`
+# 📚 Organization
 
-`📂 class-4 -> Create a simple system of students managment`
+The repository is organized into numbered class folders, each containing exercises and their respective solutions. We chose C because it helps us understand the fundamentals of data structures more deeply, from memory management to how data is organized and manipulated.
 
-God will help us.
+Some of the topics we'll explore include:
 
-# How to use this repository
-Take your laptop or deskop and your notebook to anote doubts and insigths. Into your terminal, paste the code below:
+- **Vectors (Arrays)**
+- **Matrices**
+- **Stacks**
+- **Queues**
+- **Linked Lists**
+- **Graphs**
 
-`git clone https://github.com/Dom-Henrique/ds-c.git`
+Like mental athletes, programmers must constantly challenge their minds. Data Structures and Algorithms (DSA) are VERY important for developing problem-solving skills, especially when preparing for programming competitions.
 
-Or (most secure)
+## 📂 Classes
 
-`git clone git@github.com:Dom-Henrique/ds-c.git`
+- `class-2` → Building a simple matrix system.
+- `class-3` → Building a simple employee management system.
+- `class-4` → Building a simple student management system.
+- `class-5` → Applying LinkedList in employee management system.
+- `class-6` → Applying TADs in point, circle and matrix homeworks.
 
-And voilá!
+More classes and exercises will be added as we progress through the course!
+
+# 🚀 How to Use This Repository
+
+Grab your laptop or desktop, keep a notebook nearby to write down your questions and insights, and get ready to practice!
+
+First, clone this repository using your terminal:
+
+**HTTPS:**
+```bash
+git clone https://github.com/Dom-Henrique/ds-c.git
+```
+
+**SSH (if you have an SSH key configured):**
+```bash
+git clone git@github.com:Dom-Henrique/ds-c.git
+```
+
+And voilà! You're ready to explore the code, study our solutions, and practice Data Structures with C.
+
+# 💻 Final Words
+
+Learning is a journey, and every line of code is another step forward. May God guide us throughout this journey!
+
+Happy coding! 
