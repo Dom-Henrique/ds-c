@@ -16,10 +16,10 @@ void zeraMatriz(int vet[]) {
     }
 }
 
-void adicionaElemento(int vet[], int valor, int i, int j) {
+void adicionaElemento(int vet[], int elementos, int i, int j) {
     int k = (i - 1) * colunas + (j - 1);
     if (k >= 0 && k < tam) {
-        vet[k] = valor;
+        vet[k] = elementos;
     }
 }
 

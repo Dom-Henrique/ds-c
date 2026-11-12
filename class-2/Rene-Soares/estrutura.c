@@ -17,8 +17,8 @@ int indice(int i, int j) {
     return (i - 1) * colunas + (j - 1);
 }
 
-void adicionaElemento(int vet[], int valor, int i, int j) {
-    vet[indice(i, j)] = valor;
+void adicionaElemento(int vet[], int elementos, int i, int j) {
+    vet[indice(i, j)] = elementos;
 }
 
 int buscaElemento(int vet[], int i, int j) {

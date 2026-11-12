@@ -25,11 +25,11 @@ void printMatrix(int vet[], int l, int c)
         printf("%d", vet[(i * c) + l]);
     }
 }
-void addElement(int valor, int vet[], int i, int j, int size)
+void addElement(int elementos, int vet[], int i, int j, int size)
 {
     int k = (i * size) + j;
-    vet[k] = valor;
-} // vetor, valor, linha, coluna
+    vet[k] = elementos;
+} // vetor, elementos, linha, coluna
 int searchElement(int vet[], int i, int j, int size)
 {
     int k = (i * size) + j;
