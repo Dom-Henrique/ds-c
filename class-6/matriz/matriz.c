@@ -31,10 +31,10 @@ void imprimirMatriz(int vet[], int l, int c)
         printf("\n");
     }
 }
-void adicionarElemento(int vet[], int valor, int i, int j)
+void adicionarElemento(int vet[], int elementos, int i, int j)
 {
     int ind = indice(i, j);
-    vet[ind] = valor;
+    vet[ind] = elementos;
 }
 int buscaElemento(int vet[], int i, int j)
 {
