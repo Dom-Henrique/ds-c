@@ -4,7 +4,7 @@ Hello, community! How are you doing?
 
 I'm currently studying Software Development at a Federal Institute, where André Rolim is my Data Structures professor. Together, [Renê](https://github.com/rene982) and I ([Dom Henrique](https://github.com/Dom-Henrique)) are documenting our learning journey through Data Structures using the C programming language.
 
-This repository is a collection of our class exercises, solutions, experiments, and progress as we develop our programming skills.
+This repository is a collection of our class exercises, solutions, experiments, and progress as we develop our programming skills. If you want to improve yours, I recommend to you the [Data Structure Apostile, by Waldemar Celes](https://www-usr.inf.ufsm.br/~juvizzotto/elc1067-2013b/estrut-dados-pucrio.pdf). The content are in portuguese, but you can use the translate.
 
 # 📚 Organization
 
@@ -28,6 +28,7 @@ Like mental athletes, programmers must constantly challenge their minds. Data St
 - `class-4` → Building a simple student management system.
 - `class-5` → Applying LinkedList in employee management system.
 - `class-6` → Applying TADs in point, circle and matrix homeworks.
+- `class-9` → Building and applying Stacks and Queues using vectors and Linked Lists.
 
 More classes and exercises will be added as we progress through the course!
 
