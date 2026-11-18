@@ -69,7 +69,8 @@ void imprimir_fila(const Fila *f)
     if (f == NULL)
         return;
     printf("Fila (inicio -> fim):");
-    for (int i = 0; i < f->n; i++)
+    int i;
+    for (i = 0; i < f->n; i++)
         printf(" %d", f->dados[(f->inicio + i) % CAP]);
     printf("\n");
 }

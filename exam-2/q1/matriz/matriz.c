@@ -11,7 +11,8 @@ void dimensionarMatriz(int i, int j)
 }
 void zerarMatriz(int vet[])
 {
-    for (int i = 0; i < tam; i++)
+    int i;
+    for (i = 0; i < tam; i++)
     {
         vet[i] = 0;
     }
@@ -22,9 +23,10 @@ int indice(int i, int j)
 }
 void imprimirMatriz(int vet[], int l, int c)
 {
-    for (int i = 1; i <= l; i++)
+    int i, j;
+    for ( i = 1; i <= l; i++)
     {
-        for (int j = 1; j <= c; j++)
+        for ( j = 1; j <= c; j++)
         {
             printf("%d ", vet[indice(i, j)]);
         }

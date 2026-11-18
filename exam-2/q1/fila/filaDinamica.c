@@ -91,7 +91,8 @@ void imprimir_fila(const Fila *f)
     if (f == NULL)
         return;
     printf("Fila (inicio -> fim):");
-    for (No *p = f->inicio; p; p = p->proximo)
+    No *p;
+    for (p = f->inicio; p; p = p->proximo)
         printf(" %d", p->valor);
     printf("\n");
 }

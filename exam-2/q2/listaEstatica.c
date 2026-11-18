@@ -33,7 +33,8 @@ void adicionar_func(ListaFunc *lf, Funcionario *f)
 
 static void remover_posicao(ListaFunc *lf, int i)
 {
-    for (int j = i; j < lf->n - 1; j++)
+    int j;
+    for (j = i; j < lf->n - 1; j++)
         lf->vetor[j] = lf->vetor[j + 1];
     lf->n--;
 }
@@ -42,7 +43,8 @@ int remover_nome(ListaFunc *lf, const char *nome)
 {
     if (lf == NULL)
         return 0;
-    for (int i = 0; i < lf->n; i++)
+    int i;
+    for ( i = 0; i < lf->n; i++)
     {
         if (strcmp(pegar_nome(lf->vetor[i]), nome) == 0)
         {
@@ -57,7 +59,8 @@ int remover_matricula(ListaFunc *lf, int matricula)
 {
     if (lf == NULL)
         return 0;
-    for (int i = 0; i < lf->n; i++)
+    int i;
+    for ( i = 0; i < lf->n; i++)
     {
         if (pegar_matricula(lf->vetor[i]) == matricula)
         {
@@ -72,7 +75,8 @@ Funcionario *buscar_func(int matricula, ListaFunc *lf)
 {
     if (lf == NULL)
         return NULL;
-    for (int i = 0; i < lf->n; i++)
+    int i;
+    for ( i = 0; i < lf->n; i++)
         if (pegar_matricula(lf->vetor[i]) == matricula)
             return lf->vetor[i];
     return NULL;
@@ -82,7 +86,8 @@ void imprimir_dados(const ListaFunc *lf)
 {
     if (lf == NULL)
         return;
-    for (int i = 0; i < lf->n; i++)
+    int i;
+    for ( i = 0; i < lf->n; i++)
         imprimir_func(lf->vetor[i]);
 }
 

@@ -119,7 +119,8 @@ Funcionario *buscar_func(int matricula, ListaFunc *lk)
     if (!lk)
         return NULL;
 
-    for (Node *p = lk->cabeca; p; p = p->proximo)
+    Node *p;
+    for (p = lk->cabeca; p; p = p->proximo)
         if (pegar_matricula(p->func) == matricula)
             return p->func;
     return NULL;
@@ -129,8 +130,8 @@ void imprimir_dados(const ListaFunc *lk)
 {
     if (!lk)
         return;
-
-    for (Node *p = lk->cabeca; p; p = p->proximo)
+    Node *p;
+    for (p = lk->cabeca; p; p = p->proximo)
         imprimir_func(p->func);
 }
 
