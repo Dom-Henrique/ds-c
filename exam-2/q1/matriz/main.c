@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <matriz.h>
+#include "matriz.h"
 
 int main()
 {
